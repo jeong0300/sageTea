@@ -1,43 +1,38 @@
-body{
-  overflow: auto;
+/* 전체 설정 */
+
+.font {
+  font-family: "Ubuntu", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kR-font {
+  font-family: "IBM Plex Sans KR", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold{
+  font-weight: 600;
 }
 
 /* 네비게이션 */
-.bg-blue{
-  background-color: #5E64A8;
+.backColor{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.container-fluid{
+.navbar-toggler{
+  display: none;
+  border: none !important;
+}
+
+.menus{
   display: flex;
 }
 
-.navbar-brand{
-  margin-left: 150px;
-}
-
-.image{
-  width: 150px;
-  height: auto;
-}
-
-.btn-dark{
-  margin-top: -20px;
-}
-
-.textSearch{
-  height: 30px;
-  padding-left: 10px;
-  margin-right: 5px;
-  background-color: #5E64A8;
-  border: 1px solid white;
-  border-radius: 7px;
-  color: white;
-}
-
-.search{
-  margin-top: -10px;
-  width: 20px;
-  height: 20px;
+.menu{
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 /* 토글 안쪽 */
@@ -59,7 +54,13 @@ body{
   align-content: center;
   width: 100%;
   height: 650px;
+}
 
+.back{
+  display: flex;
+  width: 30%;
+  margin: auto;
+  position: relative;
 }
 
 .banner{
@@ -67,10 +68,191 @@ body{
   height: 650px;
 }
 
+.back-image{
+  position: absolute;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.carousel-item {
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out !important;
+}
+
 /* 제품 */
-.main{
+
+.productTea{
   max-width: 1280px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto 30px auto;
+  padding-top: 40px;
+}
+
+.typeup{
+  margin: 20px auto;
+}
+
+.picture{
+  width: 100%;
+  display: flex;
+  margin: 0 auto 30px auto;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+.type{
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.autoMove{
+  display: flex;
+}
+
+.tea{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.center p{
+  margin-left: 20px;
+}
+
+/* best 상품 */
+.bestTea{
+  width: 100%;
+  height: 700px;
+  background-color: rgb(247, 237, 239);
+  padding-top: 50px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.bestSection{
+  max-width: 1280px;
   margin: 0 auto;
+}
+
+.moveTea{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.circleMove{
+  display: flex;
+}
+
+.best{
+  text-align: center;
+}
+
+.moveTea{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bestone{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 35%;
+}
+
+.besttwo{
+  position: absolute;
+  margin-top: 370px;
+  margin-left: 13%;
+}
+
+.bestthree{
+  position: absolute;
+  margin-top: 370px;
+  margin-left: 59%;
+}
+
+.bestfour{
+  position: absolute;
+  margin-top: 800px;
+}
+
+.bestfive{
+  position: absolute;
+  margin-top: 800px;
+}
+
+/* 레시피 */
+.recipe{
+  width: 100%;
+  height: 750px;
+  background-color: aqua;
+  padding-top: 50px;
+}
+
+.recipeBox{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* 인스타그램 */
+
+.instagram{
+  width: 100%;
+  height: 750px;
+  background-color: bisque;
+}
+
+/* foot */
+
+.footer{
+  width: 100%;
+  height: 450px;
+  background-color: gray;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  
+  /* 네비게이션바 */
+  .menus{
+    display: none;
+  }
+
+  .navbar-toggler{
+    display: block;
+  }
+
+  /* 배너 이미지 */
+  .back{
+    width: 50%;
+  }
+
+  .back-image{
+    margin-top: 200px;
+  }
+
+  /* 제품 이미지 */
+  .product{
+    margin-left: 10px;
+  }
+
+  .picture{
+    width: 90%;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .type{
+    width: 100%;
+    height: 100%;
+  }
+
 }
