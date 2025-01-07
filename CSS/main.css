@@ -372,9 +372,19 @@
   }
 
   /* 레시피 */
-  .recipeImageBox{
+  .carousel-item .row {
+    flex-direction: column;
+  }
+
+  .carousel-item .col {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .recipeImg {
+    width: 80%; /* 적절한 크기로 조정하세요 */
+    height: auto;
   }
   
 
