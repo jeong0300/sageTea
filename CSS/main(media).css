@@ -1,0 +1,141 @@
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  
+    /* 네비게이션바 */
+    .menus{
+      display: none;
+    }
+  
+    .navbar-toggler{
+      display: block;
+    }
+  
+    /* 배너 이미지 */
+    .back{
+      width: 50%;
+    }
+  
+    .back-image{
+      margin-top: 200px;
+    }
+  
+    /* 제품 이미지 */
+    .product{
+      margin-left: 10px;
+    }
+  
+    .picture{
+      width: 90%;
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .type{
+      width: 100%;
+      height: 100%;
+    }
+  
+    /* best */
+    .content {
+      left: 46%;
+    }
+  
+    .bestTea{
+      height: 2900px;
+    }
+  
+    .circleMove{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .circleMove h1{
+      margin: 100px auto 0 auto;
+    }
+  
+    .bestone{
+      position: block;
+      margin: 250px auto 0 auto;
+    }
+    
+    .besttwo{
+      position: block;
+      margin: 750px auto 0 auto;
+    }
+    
+    .bestthree{
+      position: block;
+      margin: 1250px auto 0 auto;
+    }
+    
+    .bestfour{
+      position: block;
+      margin: 1750px auto 0 auto;
+    }
+    
+    .bestfive{
+      position: block;
+      margin: 2250px auto 0 auto;
+    }
+  
+    /* 레시피 */
+    .carousel-item .row {
+      flex-direction: column;
+    }
+  
+    .carousel-item .col {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .recipeImg {
+      width: 80%;
+      height: auto;
+    }
+  
+    .recipeLogo {
+      max-width: 100%;
+    }
+  
+    /* 인스타그램 */
+    .instaLogo1{
+      width: 80%;
+      display: block;
+    }
+  
+    .instaLogo2{
+      width: 100%;
+      display: block;
+      margin-top: 280px;
+    }
+  
+    .instaSection{
+      margin: 450px 0 150px 0;
+      flex-wrap: wrap;
+    }
+    
+    .insta1, .insta3, .insta5, .insta7, .insta9, .insta11{
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  
+    .insta2, .insta4, .insta6, .insta8, .insta10{
+      margin-bottom: 10px;
+    }
+  
+    /* footer */
+    .informations{
+      flex-direction: column;
+    }
+  
+    .informations h4{
+      margin-bottom: 50px;
+    }
+  
+    .phoneNum{
+      margin-top: 0;
+    }
+  
+  }

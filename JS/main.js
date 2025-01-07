@@ -1,3 +1,4 @@
+// 제품 이미지 삽입
 document.addEventListener("DOMContentLoaded", () => {
   const teaSections = [
     {
@@ -96,15 +97,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// 제품 떠오르게 하기
+
+
+// 인스타그램 로고
 document.addEventListener('scroll', () => {
+  const instagram = document.querySelector('.instagram');
   const logo1 = document.querySelector('.instaLogo1');
   const logo2 = document.querySelector('.instaLogo2');
-  const scrollY = window.scrollY;
 
-  // 스크롤에 따라 로고가 화면 안으로 이동
-  if (scrollY > 200) {
+  // .instagram의 화면 내 위치 확인
+  const instagramRect = instagram.getBoundingClientRect();
+
+  // .instagram이 화면 내에 있을 때
+  if (instagramRect.top < window.innerHeight && instagramRect.bottom > 0) {
     logo1.style.transform = 'translateX(0)';
     logo2.style.transform = 'translateX(0)';
+    logo1.style.transition = 'transform 1s ease-out';
+    logo2.style.transition = 'transform 1s ease-out';
+  } else {
+    // 화면에서 벗어나면 원래 위치로 초기화
+    logo1.style.transform = 'translateX(-100%)';
+    logo2.style.transform = 'translateX(100%)';
     logo1.style.transition = 'transform 1s ease-out';
     logo2.style.transition = 'transform 1s ease-out';
   }
