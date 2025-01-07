@@ -168,6 +168,8 @@
   height: 1100px;
   text-align: center;
   position: relative;
+  
+  overflow-x: hidden;
 }
 
 .bestSection{
@@ -243,17 +245,20 @@
   margin: 0 auto 200px auto;
 }
 
-.recipeBox{
+.recipeSection{
   background-color: white;
   max-width: 1280px;
   margin: 200px auto 100px auto;
+  overflow-x: hidden;
+  text-align: center;
 }
 
 .recipeLogo{
   width: 600px;
+  height: auto;
 }
 
-.recipeImageBox{
+.recipeImageSection{
   display: flex;
   overflow-x: hidden;
 }
@@ -275,12 +280,54 @@
 /* 인스타그램 */
 .instagram{
   width: 100%;
-  height: 700px;
   background-color: #143321;
+  overflow: hidden;
 }
 
-.instaFont{
-  width: 5000px;
+.instaMove{
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.instaLogo1{
+  width: 50%;
+  max-width: 700px;
+  position: absolute;
+  margin-top: 150px;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.instaLogo2{
+  width: 50%;
+  max-width: 1000px;
+  position: absolute;
+  margin-top: 350px;
+  right: 0px;
+  transform: translateX(100%);
+}
+
+.instaSection{
+  margin: 650px 0 150px 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.instaImg{
+  width: 450px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.insta1, .insta3, .insta5, .insta7, .insta9, .insta11{
+  margin-top: 150px;
+
+}
+
+.insta2, .insta4, .insta6, .insta8, .insta10{
+  margin-bottom: 150px;
 }
 
 /* foot */
@@ -383,8 +430,24 @@
   }
 
   .recipeImg {
-    width: 80%; /* 적절한 크기로 조정하세요 */
+    width: 80%;
     height: auto;
+  }
+
+  .recipeLogo {
+    max-width: 100%;
+  }
+
+  /* 인스타그램 */
+  .instaLogo1{
+    width: 80%;
+    display: block;
+  }
+
+  .instaLogo2{
+    width: 100%;
+    display: block;
+    margin-top: 250px;
   }
   
 

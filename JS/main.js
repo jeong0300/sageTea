@@ -95,3 +95,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });      
 
 });
+
+document.addEventListener('scroll', () => {
+  const logo1 = document.querySelector('.instaLogo1');
+  const logo2 = document.querySelector('.instaLogo2');
+  const scrollY = window.scrollY;
+
+  // 스크롤에 따라 로고가 화면 안으로 이동
+  if (scrollY > 200) {
+    logo1.style.transform = 'translateX(0)';
+    logo2.style.transform = 'translateX(0)';
+    logo1.style.transition = 'transform 1s ease-out';
+    logo2.style.transition = 'transform 1s ease-out';
+  }
+});
