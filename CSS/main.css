@@ -316,14 +316,14 @@
 }
 
 .instaImg{
-  width: 450px;
+  width: 40%;
+  max-width: 450px;
   border-radius: 10px;
   margin-left: 30px;
 }
 
 .insta1, .insta3, .insta5, .insta7, .insta9, .insta11{
   margin-top: 150px;
-
 }
 
 .insta2, .insta4, .insta6, .insta8, .insta10{
@@ -449,6 +449,19 @@
     display: block;
     margin-top: 250px;
   }
+
+  .instaSection{
+    margin: 450px 0 150px 0;
+    flex-wrap: wrap;
+  }
   
+  .insta1, .insta3, .insta5, .insta7, .insta9, .insta11{
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .insta2, .insta4, .insta6, .insta8, .insta10{
+    margin-bottom: 10px;
+  }
 
 }
