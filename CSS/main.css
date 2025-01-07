@@ -333,9 +333,22 @@
 /* foot */
 
 .footer{
+  position: relative;
   width: 100%;
-  height: 450px;
-  background-color: gray;
+  height: auto;
+  background-color: #fbf8f6;
+  padding: 5%;
+  text-align: center;
+}
+
+.informations{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.phoneNum{
+  margin: 50px auto;
 }
 
 /* 반응형 */
@@ -462,6 +475,19 @@
 
   .insta2, .insta4, .insta6, .insta8, .insta10{
     margin-bottom: 10px;
+  }
+
+  /* footer */
+  .informations{
+    flex-direction: column;
+  }
+
+  .informations h4{
+    margin-bottom: 50px;
+  }
+
+  .phoneNum{
+    margin-top: 0;
   }
 
 }
