@@ -1,5 +1,22 @@
 .teaMenu{
-    height: 1000px;
+    width: 100%;
+    height: auto;
     margin-top: 60px;
     background-color: aqua;
 }
+
+.sagelogo{
+    width: 50%;
+    max-width: 500px;
+    margin-top: 100px;
+    margin-left: 10px;
+    /* transform: translateX(-100%); */
+  }
+  
+  .tealogo{
+    width: 50%;
+    max-width: 400px;
+    margin-top: 100px;
+    margin-left: 580px;
+    /* transform: translateX(100%); */
+  }

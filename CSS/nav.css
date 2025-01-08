@@ -1,0 +1,56 @@
+.font {
+  font-family: "Ubuntu", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kR-font {
+  font-family: "IBM Plex Sans KR", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+/* nav */
+
+.logo{
+  width: 150px;
+  height: 45px;
+}
+
+.backColor{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler{
+  display: none;
+  border: none !important;
+}
+
+.menus{
+  display: flex;
+}
+
+.menu{
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  
+  /* 네비게이션바 */
+  .menus{
+    display: none;
+  }
+
+  .navbar-toggler{
+    display: block;
+  }
+
+
+}

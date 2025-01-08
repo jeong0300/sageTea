@@ -19,30 +19,6 @@ html {
   font-weight: 600;
 }
 
-/* 네비게이션 */
-.logo{
-  width: 150px;
-  height: 45px;
-}
-
-.backColor{
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.navbar-toggler{
-  display: none;
-  border: none !important;
-}
-
-.menus{
-  display: flex;
-}
-
-.menu{
-  margin-left: 20px;
-  cursor: pointer;
-}
-
 /* 배너 */
 .carousel{
   display: flex;
@@ -361,32 +337,4 @@ html {
 
 .insta2, .insta4, .insta6, .insta8, .insta10{
   margin-bottom: 150px;
-}
-
-/* foot */
-
-.footer{
-  width: 100%;
-  height: auto;
-  padding: 100px;
-  padding-bottom: 30px;
-  background-color: rgb(228, 222, 210);
-  text-align: center;
-}
-.backgroundImg img{
-  width: 100%;
-}
-
-.informations{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.phoneNum{
-  margin: 30px auto;
-}
-
-.footLogo p{
-  margin-top: 30px;
 }
