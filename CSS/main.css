@@ -114,6 +114,8 @@ html {
   height: 200px;
   border-radius: 50%;
   margin-left: 20px;
+  user-select: none; /* 선택 방지 */
+  pointer-events: none; /* 드래그 방지 */
 }
 
 .center{
@@ -124,6 +126,7 @@ html {
   transform: translateY(100px);
   opacity: 0;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  user-select: none;
 }
 
 .center p{

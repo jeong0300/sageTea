@@ -1,3 +1,23 @@
+//네비게이션바
+fetch('nav.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+});
+
+// 스크롤 시 네비게이션 색상 변경
+document.addEventListener("scroll", () => {
+  const backColors = document.querySelectorAll('.backColor');
+
+  backColors.forEach((backColor) => {
+    if (window.scrollY > 0) {
+      backColor.style.backgroundColor = "white";
+    } else {
+      backColor.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    }
+  });
+});
+
 // 제품 이미지 삽입
 document.addEventListener("DOMContentLoaded", () => {
   const teaSections = [
@@ -93,23 +113,37 @@ document.addEventListener("DOMContentLoaded", () => {
     pictureDiv.appendChild(typeupDiv);
     pictureDiv.appendChild(autoMoveDiv);
     teaSection.appendChild(pictureDiv);
+
+    // 드래그 스크롤 기능
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    autoMoveDiv.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      startX = e.pageX;
+      scrollLeft = autoMoveDiv.scrollLeft;
+      autoMoveDiv.style.cursor = 'grabbing'; // 커서 스타일 변경
+    });
+
+    autoMoveDiv.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      const x = e.pageX - startX;
+      autoMoveDiv.scrollLeft = scrollLeft - x;
+    });
+
+    autoMoveDiv.addEventListener("mouseup", () => {
+      isDragging = false;
+      autoMoveDiv.style.cursor = 'grab'; // 커서 스타일 복원
+    });
+
+    autoMoveDiv.addEventListener("mouseleave", () => {
+      isDragging = false;
+      autoMoveDiv.style.cursor = 'grab'; // 커서 스타일 복원
+    });
+    
   });      
 
-});
-
-// 스크롤 시 네비게이션 색상 변경
-document.addEventListener("scroll", () => {
-  const backColors = document.querySelectorAll('.backColor');
-
-  backColors.forEach((backColor) => {
-    if (window.scrollY > 0) {
-      // 스크롤이 시작되면 배경색을 어두운 색으로 변경
-      backColor.style.backgroundColor = "white";
-    } else {
-      // 스크롤이 맨 위에 있을 때 배경색을 원래대로 설정
-      backColor.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-    }
-  });
 });
 
 
@@ -193,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
           // .best 요소에 active 클래스를 추가하여 애니메이션 실행
           bestItem.classList.add('active');
-        }, index * 300); // 각 항목에 300ms 간격으로 딜레이 적용
+        }, index * 300);
 
         // 한 번만 동작하도록 observer에서 해제
         observer.unobserve(bestItem);
@@ -249,4 +283,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 애니메이션을 위한 업데이트
   instaSection.style.animation = 'scroll 50s linear infinite';
+});
+
+//foot
+fetch('foot.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('footer').innerHTML = data;
 });

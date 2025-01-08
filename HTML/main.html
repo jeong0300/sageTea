@@ -10,6 +10,7 @@
 
     <!-- js -->
     <script src="../JS/main.js"></script>
+    <script src="../JS/move.js"></script>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,37 +29,7 @@
   <body>
   
     <!-- 네비게이션 바 -->
-    <nav class="navbar backColor fixed-top"> <!-- js에서 스크롤 시 색 바꾸기 -->
-      <div class="container-fluid">
-        <img class="logo" src="../images/Sage_Tea_scroll.png"/>
-
-        <div class="menus">
-          <div class="menu font" onclick="move(`../HTML/product.html`)">Product</div>
-          <div class="menu font"onclick="move()">Recipe</div>
-        </div>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title font" id="offcanvasNavbarLabel">SageTea</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active font" aria-current="page" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font" href="#">Recipe</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- 배너 -->
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -216,25 +187,7 @@
     
     </div>
 
-    <div class="footer">
-
-      <div class="informations">
-        <h5 class="font"> Company Name : Sage Tea </h5>
-        <h5 class="font"> Owner : 승우준 </h5>
-        <h5 class="font"> Phone Number : 031-423-6869 </h5>
-        <h5 class="font"> Email : sagetea.CS@gmail.com </h5>
-      </div>
-
-      <div class="phoneNum">
-        <h5 class="font"> Business Registration Number : 031-423-6869 </h5>
-      </div>
-
-      <div class="footLogo">
-        <img src="../images/Sage_Tea.png" alt="sagetea Logo"/>
-        <p class="font"> Copyright © sageTea All rights reserved.</p>
-      </div>
-
-    </div>
+    <div id="footer"></div>
     
   </body>
   
