@@ -1,4 +1,8 @@
 /* 전체 설정 */
+html {
+  scroll-behavior: smooth;
+}
+
 .font {
   font-family: "Ubuntu", serif;
   font-weight: 500;
@@ -79,6 +83,9 @@
 }
 
 .typeup{
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   margin: 20px auto;
 }
 
@@ -99,6 +106,7 @@
 
 .autoMove{
   display: flex;
+  overflow: hidden;
 }
 
 .tea{
@@ -113,10 +121,19 @@
   flex-direction: column;
   text-align: center;
   cursor: pointer;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
 .center p{
   margin-left: 20px;
+}
+
+.typeup.active,
+.autoMove .center.active {
+  transform: translateY(0); /* 원래 위치로 이동 */
+  opacity: 1; /* 보이도록 */
 }
 
 /* 라인 */
@@ -128,10 +145,10 @@
 }
 
 .line{
-  /* visibility: hidden; */
   width: 15px;
-  height: 100px;
+  height: 10px;
   margin-bottom: -15px;
+  transition: height 1.5s ease;
 }
 
 /* best 상품 */
@@ -147,6 +164,7 @@
   height: 100px;
   position: relative;
   margin: 0 auto;
+  transition: transform 2.0s ease;
 }
 
 .content {
@@ -169,8 +187,7 @@
   height: 1100px;
   text-align: center;
   position: relative;
-  
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .bestSection{
@@ -188,16 +205,10 @@
   margin-bottom: 20px;
 }
 
-/* .icon{
-  width: 45px;
-  height: 80px;
-  position: absolute;
-  left: 20px;
-  top: 10px;
-} */
-
 .circleMove{
   display: flex;
+  overflow: hidden;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .circleMove img{
@@ -206,6 +217,14 @@
 
 .best{
   text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.circleMove .active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .bestone{
@@ -313,7 +332,8 @@
   margin: 650px 0 150px 0;
   display: flex;
   position: relative;
-  overflow: hidden;
+  width: max-content;
+  animation: scroll 30s linear infinite;
 }
 
 .instaImg{
@@ -323,7 +343,16 @@
   margin-left: 30px;
 }
 
-.insta1, .insta3, .insta5, .insta7, .insta9, .insta11{
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.insta1, .insta3, .insta5, .insta7, .insta9{
   margin-top: 150px;
 }
 
