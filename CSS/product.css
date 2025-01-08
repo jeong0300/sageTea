@@ -53,3 +53,27 @@ body.no-scroll {
 .teaMenu.scrolled .sagelogo, .teaMenu.scrolled .tealogo {
   opacity: 0; /* 이미지 사라짐 */
 }
+
+.changeSage{
+  position: absolute;
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  top: 190px;
+  left: 20%;
+  /* transform: translateX(-110%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease; */
+}
+
+.changeTea{
+  position: absolute;
+  width: 45%;
+  max-width: 400px;
+  height: auto;
+  bottom: 190px;
+  right: 20%;
+  /* transform: translateX(-110%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease; */
+}
