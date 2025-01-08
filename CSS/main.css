@@ -312,7 +312,7 @@ html {
   display: flex;
   position: relative;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 .instaImg{
@@ -327,7 +327,7 @@ html {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 

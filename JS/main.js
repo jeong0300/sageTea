@@ -234,14 +234,14 @@ document.addEventListener('scroll', () => {
   if (instagramRect.top < window.innerHeight && instagramRect.bottom > 0) {
     logo1.style.transform = 'translateX(0)';
     logo2.style.transform = 'translateX(0)';
-    logo1.style.transition = 'transform 1s ease-out';
-    logo2.style.transition = 'transform 1s ease-out';
+    logo1.style.transition = 'transform 2s ease-out';
+    logo2.style.transition = 'transform 2s ease-out';
   } else {
     // 화면에서 벗어나면 원래 위치로 초기화
     logo1.style.transform = 'translateX(-100%)';
     logo2.style.transform = 'translateX(100%)';
-    logo1.style.transition = 'transform 1s ease-out';
-    logo2.style.transition = 'transform 1s ease-out';
+    logo1.style.transition = 'transform 2s ease-out';
+    logo2.style.transition = 'transform 2s ease-out';
   }
 });
 
@@ -249,10 +249,8 @@ document.addEventListener('scroll', () => {
 document.addEventListener("DOMContentLoaded", function () {
   const instaSection = document.querySelector('.instaSection');
   const instaImages = document.querySelectorAll('.instaImg');
-
-  const imageCount = instaImages.length;
   
-  // 마지막 이미지를 첫 번째로 복제하여 추가
+  // 이미지를 두 번 복제하여 공백 없이 반복
   function cloneImages() {
     instaImages.forEach(image => {
       const clone = image.cloneNode(true);
@@ -260,8 +258,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // 두 번째 복제 추가 (필요한 경우)
   cloneImages();
-
-  // 애니메이션을 위한 업데이트
-  instaSection.style.animation = 'scroll 50s linear infinite';
 });

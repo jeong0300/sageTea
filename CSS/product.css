@@ -1,22 +1,55 @@
+/* 전체 */
+body.no-scroll {
+  overflow: hidden; /* 스크롤 제한 */
+}
+
+/* 로고 */
 .teaMenu{
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
-    background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin-top: 60px;
+}
+
+.backCircle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #143321;
+  transition: transform 1s ease, opacity 0.5s ease;
 }
 
 .sagelogo{
-    width: 50%;
-    max-width: 500px;
-    margin-top: 100px;
-    margin-left: 10px;
-    /* transform: translateX(-100%); */
-  }
-  
-  .tealogo{
-    width: 50%;
-    max-width: 400px;
-    margin-top: 100px;
-    margin-left: 580px;
-    /* transform: translateX(100%); */
-  }
+  position: absolute;
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  top: 200px;
+  left: 2%;
+  transform: translateX(-110%);
+  transition: transform 1s ease, opacity 0.5s ease;
+}
+
+.tealogo{
+  position: absolute;
+  width: 45%;
+  max-width: 400px;
+  height: auto;
+  bottom: 200px;
+  right: 2%;
+  transform: translateX(110%);
+  transition: transform 1s ease, opacity 0.5s ease;
+}
+
+.teaMenu.scrolled .backCircle {
+  transform: scale(20); /* 화면 전체를 채움 */
+  opacity: 0; /* 사라짐 */
+}
+
+.teaMenu.scrolled .sagelogo, .teaMenu.scrolled .tealogo {
+  opacity: 0; /* 이미지 사라짐 */
+}
