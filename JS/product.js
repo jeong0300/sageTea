@@ -124,7 +124,7 @@ window.addEventListener('scroll', function() {
   
   // .scrollDown 요소의 top이 화면의 50%를 지날 때
   if (scrollDownPosition <= windowHeight / 2) {
-    downLine.style.height = '110px';
+    downLine.style.height = '200px';
   } else {
     downLine.style.height = '0px';
   }
@@ -138,9 +138,8 @@ window.addEventListener('scroll', function() {
 
   if (window.scrollY >= teaProductTop) {  // teaProduct가 화면에 닿으면
 
-    let photoMainWidth = Math.max(50, Math.min(100, ((window.scrollY - teaProductTop) / 12) - 25));
+    let photoMainWidth = Math.max(50, Math.min(100, ((window.scrollY - teaProductTop) / 8) - 25));
     document.querySelector('.photo-main').style.width = `${photoMainWidth}vw`;
-
    
   }
 });
