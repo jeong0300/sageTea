@@ -8,6 +8,13 @@
   <!-- js -->
   <script src="../JS/product.js"></script>
   <script src="../JS/nav.js"></script>
+
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual'; // 스크롤 복원 비활성화
+    }
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SageTea</title>
@@ -19,7 +26,53 @@
     <div class="backCircle"></div>
     <img class="sagelogo" src="../images/product_sage.png" alt="sageLogo"/>
     <img class="tealogo" src="../images/product_tea.png" alt="teaLogo"/>
+    
+    <div class="lineTop"></div>
+    <img class="changeSage" src="../images/product_sage(white).png" alt="changeSageLogo"/>
+    <img class="changeTea" src="../images/product_tea(white).png" alt="changeTeaLogo"/>
+    <div class="lineBottom"></div>
   </div>
+
+  <div class="scrollDown">
+    <p class="font"> Scroll Down </p>
+    <div class="downLine"></div>
+  </div>
+
+  <!-- 제품 -->
+  <div class="teaProduct">
+
+    <div class="ProductLine"></div>
+    <img class="nearby" src="../images/nearby.png" alt="nearby"/>
+
+    <div class="title-box">
+      <img class="titleLogo" src="../images/productLogo(before).png" alt="productLogo"/>
+    </div>
+
+    <!-- sticky로 진행 -->
+
+    <div class="section">
+      <div class="photo-wrap">
+
+        <div class="photo1">
+          <div class="photo purple"></div>
+          <div class="photo purple"></div>
+        </div>
+
+        <div class="photo2">
+          <div class="photo-main blue">
+            <div class="mainPhoto"></div>
+          </div>
+        </div>
+
+        <div class="photo3">
+          <div class="photo purple"></div>
+          <div class="photo purple"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
 
   <div id="footer"></div>
 </body>

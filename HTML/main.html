@@ -15,6 +15,11 @@
     <script src="../JS/move.js"></script>
     <script src="../JS/nav.js"></script>
     <script src="../JS/foot.js"></script>
+    <script>
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual'; // 스크롤 복원 비활성화
+      }
+    </script>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,7 +135,7 @@
       </div>
       <div class="recipeImageSection carousel-inner">
         
-        <div class="carousel-item active" data-bs-interval="2000">
+        <div class="carousel-item active" data-bs-interval="1500">
           <div class="row">
             <div class="col">
               <img class="recipeImg" src="../images/recipe(티칵테일).jpg" alt="티칵테일" />

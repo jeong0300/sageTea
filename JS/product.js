@@ -3,83 +3,153 @@ fetch('nav.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('navbar').innerHTML = data;
-  });
+});
 
-// 원래 로고 애니메이션 (페이지 로드 시 실행)
+
+// 원래 로고 애니메이션
 const logoAnimation = () => {
   const sagelogo = document.querySelector('.sagelogo');
   const tealogo = document.querySelector('.tealogo');
+  
 
-  sagelogo.style.transform = 'translateX(-110%)';
-  tealogo.style.transform = 'translateX(110%)';
+  if (sagelogo && tealogo) {
+    sagelogo.style.transform = 'translateX(0)';
+    tealogo.style.transform = 'translateX(0)';
+  }
 
-  // 강제로 리플로우
-  sagelogo.offsetHeight;
-
-  sagelogo.style.transform = 'translateX(0)';
-  tealogo.style.transform = 'translateX(0)';
 };
 
-// 원 확대 및 배경색 변경 (스크롤 시 실행)
+// 바뀐 로고 애니메이션
+const changeLogoAnimation = () => {
+  const changeSage = document.querySelector('.changeSage');
+  const changeTea = document.querySelector('.changeTea');
+  const lineTop = document.querySelector('.lineTop');
+  const lineBottom = document.querySelector('.lineBottom');
+
+  if (changeSage && changeTea) {
+    changeSage.style.transform = 'translateX(0)';
+    changeTea.style.transform = 'translateX(0)';
+    lineTop.style.transform = 'translateX(0)';
+    lineBottom.style.transform = 'translateX(0)';
+    changeSage.style.opacity = 1;
+    changeTea.style.opacity = 1;
+    lineTop.style.opacity = 1;
+    lineBottom.style.opacity = 1;
+  }
+};
+
+// 스크롤 애니메이션 중에 로고 전환
 const scrollAnimation = () => {
+  const backCircle = document.querySelector('.backCircle');
   const sagelogo = document.querySelector('.sagelogo');
   const tealogo = document.querySelector('.tealogo');
-  const backCircle = document.querySelector('.backCircle');
 
-  // 스크롤 제한
-  document.body.classList.add('no-scroll'); // 스크롤 제한
+  if (backCircle) {
+    backCircle.style.transform = 'scale(10)';
+    backCircle.style.transition = 'transform 1s ease-out';
+  }
 
-  // 원이 화면을 꽉 채우도록 크기 증가
-  backCircle.style.transform = 'scale(20)'; // 원을 크게 확장
-  backCircle.style.transition = 'transform 1s ease-out'; // 원 확대 애니메이션
-
-  // 배경색 변경 (원 색상과 동일)
   document.body.style.transition = 'background-color 1s ease-out';
-  document.body.style.backgroundColor = '#143321'; // 원의 색상으로 변경
+  document.body.style.backgroundColor = '#143321';
+  document.body.classList.add('no-scroll');
 
-  // 애니메이션 완료 후 실행
   setTimeout(() => {
-    // 이미지 변경 및 추가
-    sagelogo.src = '../images/product_sage(white).png';
-    tealogo.src = '../images/product_tea(white).png';
+    // 원래 로고 사라짐
+    if (sagelogo && tealogo) {
+      sagelogo.style.opacity = 0;
+      tealogo.style.opacity = 0;
+    }
 
-    // 고정 위치 스타일 적용
-    sagelogo.classList.remove('sagelogo');
-    tealogo.classList.remove('tealogo');
-    sagelogo.classList.add('changeSage');
-    tealogo.classList.add('changeTea');
+    // 변경된 로고 나타남
+    setTimeout(() => {
+      const teaMenu = document.querySelector('.teaMenu');
+      teaMenu.style.marginTop = '120px';
+      changeLogoAnimation();
 
-    // 원 제거
-    backCircle.style.display = 'none';
-
-    // 스크롤 허용
-    document.body.classList.remove('no-scroll');
-  }, 1000); // 애니메이션 시간이 끝난 후
+      // 애니메이션 종료 후 스크롤 허용
+      setTimeout(() => {
+        document.body.classList.remove('no-scroll');
+      }, 1000); // changeLogoAnimation과 동일한 시간
+    }, 1000); // backCircle 애니메이션 시간
+  }, 1000); // 초기 애니메이션 시간
 };
 
-// 페이지 로드 시 실행
+// 페이지가 처음 로드될 때 애니메이션을 실행
 document.addEventListener('DOMContentLoaded', () => {
-  logoAnimation(); // 페이지 로드 시 로고 애니메이션 실행
+  if (!sessionStorage.getItem('loaded')) {
 
-  // 페이지가 로드되면 원은 커지지 않도록 초기화
+    sessionStorage.setItem('loaded', 'true');
+    logoAnimation();
+
+  } else {
+    // 이미 로드된 경우에는 스크롤 위치만 조정
+    window.scrollTo(0, 0);
+  }
+});
+
+// 페이지 전환 시 로고 애니메이션 재실행
+window.addEventListener('pageshow', () => {
+
+  window.scrollTo(0, 0); 
+
+  // 애니메이션 실행
+  logoAnimation();
+
   let scrollTriggered = false;
+  let disableScroll = false;
 
   window.addEventListener('scroll', () => {
-    if (scrollTriggered) return; // 이미 애니메이션이 실행되면 다시 실행되지 않도록
+    if (disableScroll) return;
 
-    scrollTriggered = true; // 스크롤을 한 번만 트리거
-    scrollAnimation(); // 스크롤 애니메이션 실행
+    const scrollThreshold = 1;
+    if (!scrollTriggered && window.scrollY > scrollThreshold) {
+      scrollTriggered = true;
+      disableScroll = true;
+
+      scrollAnimation().then(() => {
+        disableScroll = false;
+      });
+    }
   });
 });
 
-// 페이지 전환 시 실행
-window.addEventListener('pageshow', () => {
-  logoAnimation(); // 페이지 전환 시에도 로고 애니메이션 실행
+// scroll down
+window.addEventListener('scroll', function() {
+  const downLine = document.querySelector('.downLine');
+  const scrollDown = document.querySelector('.scrollDown');
+  
+  const scrollPosition = window.scrollY; // 페이지의 스크롤 위치
+  const scrollDownPosition = scrollDown.getBoundingClientRect().top; // .scrollDown 요소의 화면에서의 상단 위치
+  const windowHeight = window.innerHeight; // 뷰포트의 높이
+  
+  // .scrollDown 요소의 top이 화면의 50%를 지날 때
+  if (scrollDownPosition <= windowHeight / 2) {
+    downLine.style.height = '110px';
+  } else {
+    downLine.style.height = '0px';
+  }
 });
 
-// foot 로드
+// 제품
+window.addEventListener('scroll', function() {
+  
+  const teaProduct = document.querySelector('.teaProduct');
+  const teaProductTop = teaProduct.getBoundingClientRect().top + window.scrollY; // 위치 계산
+
+  if (window.scrollY >= teaProductTop) {  // teaProduct가 화면에 닿으면
+
+    let photoMainWidth = Math.max(50, Math.min(100, ((window.scrollY - teaProductTop) / 12) - 25));
+    document.querySelector('.photo-main').style.width = `${photoMainWidth}vw`;
+
+   
+  }
+});
+
+
+// footer 로드
 fetch('foot.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
-  });
+  }
+);

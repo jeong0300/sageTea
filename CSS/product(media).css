@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+  .sagelogo {
+    top: 150px;
+  }
+  
+  .tealogo {
+    bottom: 150px;
+  }
+}
