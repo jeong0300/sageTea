@@ -198,8 +198,9 @@ body.no-scroll {
 }
 
 .photo2{
-  /* width: 0; */
-  height: 250vh;
+  width: 0;
+  overflow: hidden;
+  height: 310vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,17 +235,69 @@ body.no-scroll {
 
 .pageLogo{
   width: 45%;
+  margin-bottom: 50px;
 }
 
 .teaPhoto{
   max-width: 80%;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   display: flex;
+  margin-bottom: 50px;
+}
+
+.teaPhoto::-webkit-scrollbar-button{
+  display: none;
+}
+
+.teaPhoto::-webkit-scrollbar{
+  height: 8px;
+}
+
+.teaPhoto::-webkit-scrollbar-thumb {
+  background-color: #b5bfb8;
+  border-radius: 10px;
 }
 
 .teaImg{
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  margin-right: 10px;
+  margin: 0 20px 15px 0;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.information:hover .teaImg {
+  transform: scale(1.1);
+}
+
+/* 이미지 설명들 */
+.information{
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ImgInfo p{
+  font-size: 13px;
+}
+
+.ImgInfo{
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.information:hover .ImgInfo {
+  opacity: 1;
 }

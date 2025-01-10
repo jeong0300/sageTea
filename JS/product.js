@@ -63,7 +63,7 @@ const scrollAnimation = () => {
     // 변경된 로고 나타남
     setTimeout(() => {
       const teaMenu = document.querySelector('.teaMenu');
-      teaMenu.style.marginTop = '70px';
+      teaMenu.style.marginTop = '120px';
       changeLogoAnimation();
 
       // 애니메이션 종료 후 스크롤 허용
@@ -123,7 +123,7 @@ window.addEventListener('scroll', function() {
   const windowHeight = window.innerHeight; // 뷰포트의 높이
   
   // .scrollDown 요소의 top이 화면의 50%를 지날 때
-  if (scrollDownPosition <= windowHeight / 2) {
+  if (scrollDownPosition <= windowHeight / 1) {
     downLine.style.height = '200px';
   } else {
     downLine.style.height = '0px';
@@ -131,17 +131,49 @@ window.addEventListener('scroll', function() {
 });
 
 // 제품
-window.addEventListener('scroll', function() {
-  
+let isExpanded = false; // 확장 상태를 추적하는 변수
+
+window.addEventListener('scroll', function () {
   const teaProduct = document.querySelector('.teaProduct');
-  const teaProductTop = teaProduct.getBoundingClientRect().top + window.scrollY; // 위치 계산
+  const teaProductTop = teaProduct.getBoundingClientRect().top + window.scrollY; // teaProduct의 화면 상단 위치
+  const photoMain = document.querySelector('.photo-main');
+  const photo2 = document.querySelector('.photo2');
 
-  if (window.scrollY >= teaProductTop) {
+  if (!isExpanded && window.scrollY >= teaProductTop) {
+    // 스크롤에 따른 너비 증가 계산
+    let scrollOffset = window.scrollY - teaProductTop; // 스크롤 오프셋
+    let maxWidth = 30; // 최대 너비
+    let calculatedWidth = Math.min(maxWidth, scrollOffset / 15); // 증가 속도
 
-    let photoMainWidth = Math.max(50, Math.min(100, ((window.scrollY - teaProductTop) / 5) - 25));
-    document.querySelector('.photo-main').style.width = `${photoMainWidth}vw`;
-   
+    // 너비 설정
+    photoMain.style.transition = 'width 0.5s ease-out';
+    photo2.style.transition = 'width 0.5s ease-out';
+
+    // 점진적 너비 증가
+    photoMain.style.width = `${calculatedWidth}vw`;
+    photo2.style.width = `${calculatedWidth}vw`;
+
+    // 너비가 최대치에 도달하면 고정
+    if (calculatedWidth >= maxWidth) {
+      isExpanded = true; // 확장 완료 상태
+    }
+  } else if (isExpanded) {
+    // 확장된 상태에서 너비를 유지
+    photoMain.style.width = '100vw';
+    photo2.style.width = '100vw';
+    photo2.style.overflow = 'visible';
   }
+});
+
+// 이미지 드래그 방지
+document.addEventListener('DOMContentLoaded', function () {
+  const teaImages = document.querySelectorAll('.teaImg');
+
+  teaImages.forEach((img) => {
+    img.addEventListener('dragstart', function (e) {
+      e.preventDefault(); 
+    });
+  });
 });
 
 // footer 로드
