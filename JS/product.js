@@ -63,7 +63,7 @@ const scrollAnimation = () => {
     // 변경된 로고 나타남
     setTimeout(() => {
       const teaMenu = document.querySelector('.teaMenu');
-      teaMenu.style.marginTop = '120px';
+      teaMenu.style.marginTop = '70px';
       changeLogoAnimation();
 
       // 애니메이션 종료 후 스크롤 허용
@@ -136,14 +136,13 @@ window.addEventListener('scroll', function() {
   const teaProduct = document.querySelector('.teaProduct');
   const teaProductTop = teaProduct.getBoundingClientRect().top + window.scrollY; // 위치 계산
 
-  if (window.scrollY >= teaProductTop) {  // teaProduct가 화면에 닿으면
+  if (window.scrollY >= teaProductTop) {
 
-    let photoMainWidth = Math.max(50, Math.min(100, ((window.scrollY - teaProductTop) / 8) - 25));
+    let photoMainWidth = Math.max(50, Math.min(100, ((window.scrollY - teaProductTop) / 5) - 25));
     document.querySelector('.photo-main').style.width = `${photoMainWidth}vw`;
    
   }
 });
-
 
 // footer 로드
 fetch('foot.html')
