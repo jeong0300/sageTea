@@ -257,13 +257,14 @@ body.no-scroll {
 .teaPhoto::-webkit-scrollbar-thumb {
   background-color: #b5bfb8;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .teaImg{
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  margin: 0 20px 15px 0;
+  margin: 0 10px 15px 10px;
   user-select: none;
   transition: transform 0.3s ease;
 }
@@ -282,6 +283,11 @@ body.no-scroll {
 
 .ImgInfo p{
   font-size: 13px;
+  font-weight: 500;
+}
+
+.ImgInfo p, h4{
+  user-select: none;
 }
 
 .ImgInfo{
@@ -290,10 +296,10 @@ body.no-scroll {
   flex-direction: column;
   position: absolute;
   top: 25px;
-  left: 20px;
+  left: 40px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 10px;
 }
