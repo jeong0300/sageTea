@@ -24,11 +24,43 @@
   display: flex;
   width: 100%;
   height: 500px;
-  background-color: aqua;
+  overflow: hidden;
 }
 
 .backLogo{
   position: absolute;
-  left: 6%;
-  font-size: 300px;
+  font-size: 400px;
+  opacity: 0.5;
+  animation: scroll 10s linear infinite;
+  color: #143321;
+  width: max-content;
+  margin-top: -50px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(+100%);
+  }
+}
+
+.icon{
+  position: relative;
+}
+
+.back{
+  position: absolute;
+  z-index: 1;
+}
+
+.front{
+  position: absolute;
+  z-index: 10;
+}
+
+.hend{
+  position: absolute;
+  z-index: 5;
 }

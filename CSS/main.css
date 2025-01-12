@@ -313,6 +313,7 @@ html {
   position: relative;
   width: max-content;
   animation: scroll 50s linear infinite;
+  cursor: pointer;
 }
 
 .instaImg{
