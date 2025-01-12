@@ -1,0 +1,23 @@
+@media screen and (max-width: 1280px) {
+    .icon{
+        display: none;
+    }
+
+    .recipeLogo{
+        animation-delay: 1s;
+      }
+      
+      .recipeText{
+        animation-delay: 2s;
+      }
+}
+
+@media screen and (max-width: 800px) {
+    .recipeText{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    
+}
