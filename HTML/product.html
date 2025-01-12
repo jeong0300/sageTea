@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <!-- css -->
   <link rel="stylesheet" href="../CSS/product.css"/>
   <link rel="stylesheet" href="../CSS/product(media).css"/>
-  
-  <!-- js -->
-  <script src="../JS/product.js"></script>
-  <script src="../JS/nav.js"></script>
-  <script src="../JS/move.js"></script>
 
   <script>
     if ('scrollRestoration' in history) {
@@ -16,8 +11,14 @@
     }
   </script>
 
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- js -->
+  <script src="../JS/product.js"></script>
+  <script src="../JS/nav.js"></script>
+  <script src="../JS/move.js"></script>
 
   <!--font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,12 +27,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SageTea</title>
 </head>
 <body>
+
   <div id="navbar"></div>
 
   <div class="teaMenu">
@@ -76,240 +79,253 @@
             <div class="productPage">
               <img class="pageLogo" src="../images/caffeine-freeLogo.png" alt="caffeine-free Logo"/>
 
-              <div class="teaPhoto">
+              <div class="centerImg">
+                <button class="scroll-btn left-btn left-btn-1">
+                  <img class="btn" src="../images/leftBtn.png" alt="left icon"/>
+                </button>
+                <div class="teaPhoto-wrapper">
+                  <div class="teaPhoto teaPhoto-1">
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-caffeine-free(라벤더블렌드).jpg" alt="라벤더블렌드"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 라벤더블렌드 </h5>
-                    <P class="KR-font"> 라벤더와 캐모마일, 장미를 더해 지친 하루의 마무리를 도와주는 블렌딩 티 </P>
+                    <div class="information">
+                      <img class="teaImg modal1" src="../images/Photo-caffeine-free(라벤더블렌드).jpg" alt="라벤더블렌드"/>
+                      <div class="ImgInfo">
+                          <p class="text-regular"> 라벤더블렌드 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-caffeine-free(민트블렌드).jpg" alt="민트블렌드"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 민트블렌드 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-caffeine-free(레몬머틀블렌드).jpg" alt="레몬머틀블렌드"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 레몬머틀블렌드</p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-caffeine-free(루이보스블렌드).jpg" alt="루이보스블렌드"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 루이보스블렌드 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-caffeine-free(아주보통의하루).jpg" alt="아주보통의하루"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 아주보통의하루 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-caffeine-free(캐모마일블렌드).jpg" alt="캐모마일블렌드"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 캐모마일블렌드 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-caffeine-free(히비스커스블렌드).jpg" alt="히비스커스블렌드"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 히비스커스블렌드 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-caffeine-free(히비스커스오렌지).jpg" alt="히비스커스오렌지"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 히비스커스오렌지 </p>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-caffeine-free(민트블렌드).jpg" alt="민트블렌드"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 민트블렌드 </h5>
-                    <P class="KR-font"> 멘톨향이 강한 민트 베이스에 장미꽃과 펜넬을 블렌딩 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-caffeine-free(레몬머틀블렌드).jpg" alt="레몬머틀블렌드"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 레몬머틀블렌드</h5>
-                    <P class="KR-font"> 상큼한 레몬향과 레몬머틀, 레몬그라스, 청정 제주 귤피를 블렌딩한 티 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-caffeine-free(루이보스블렌드).jpg" alt="루이보스블렌드"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 루이보스블렌드 </h5>
-                    <P class="KR-font"> 루이보스에 향긋한 제주 귤피와 오렌지향을 더해 블렌딩한 티 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-caffeine-free(아주보통의하루).jpg" alt="아주보통의하루"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 아주보통의하루 </h5>
-                    <P class="KR-font"> 레몬머틀, 진저, 로즈마리의 완벽한 조화, 허브 블렌딩티 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-caffeine-free(캐모마일블렌드).jpg" alt="캐모마일블렌드"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 캐모마일블렌드 </h5>
-                    <P class="KR-font"> 허브인 캐모마일, 라벤더, 레몬그라스에 로즈플라워, 마리골드를 블렌드힌 티 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-caffeine-free(히비스커스블렌드).jpg" alt="히비스커스블렌드"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 히비스커스블렌드 </h5>
-                    <P class="KR-font"> 히비스커스에 로즈힙, 레몬그라스, 로즈플라워, 건조사과, 오렌지필을 블렌딩한 티 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-caffeine-free(히비스커스오렌지).jpg" alt="히비스커스오렌지"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 히비스커스오렌지 </h5>
-                    <P class="KR-font"> 히비스커스 베이스에 싱그러운 오렌지를 블렌딩한 카페인 프리 허브 블렌드티 </P>
-                  </div>
-                </div>
-
+                <button class="scroll-btn right-btn right-btn-1">
+                  <img class="btn" src="../images/rightBtn.png" alt="right icon"/>
+                </button>
               </div>
 
               <img class="pageLogo" src="../images/blendingLogo.png" alt="blending Logo"/>
 
-              <div class="teaPhoto">
+              <div class="centerImg">
+                <button class="scroll-btn left-btn left-btn-2">
+                  <img class="btn" src="../images/leftBtn.png" alt="left icon"/>
+                </button>
+                <div class="teaPhoto-wrapper">
+                  <div class="teaPhoto teaPhoto-2">
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-blending(3시의요정).jpg" alt="3시의요정"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 3시의요정 </h5>
-                    <P class="KR-font"> 아쌈홍차에 카라멜향, 다크초코향을 블렌딩한 티 </P>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-blending(3시의요정).jpg" alt="3시의요정"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 3시의요정 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-blending(다이너마이트).jpg" alt="다이너마이트"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 다이너마이트티 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-blending(레인와인의향기).jpg" alt="레인와인의향기"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 레드와인의향기 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-blending(블루스카이).jpg" alt="블루스카이"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 블루스카이 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-blending(웨딩드레스티).jpg" alt="웨딩드레스티"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 웨딩드레스티 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-blending(잉글리쉬브렉퍼스트).jpg" alt="잉글리쉬브렉퍼스트"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 잉글리쉬 <br/> 브렉퍼스트 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-blending(제주감귤그린티).jpg" alt="제주감귤그린티"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 제주감귤그린티 </p>
+                      </div>
+                    </div>
+
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-blending(하루의저녁).jpg" alt="하루의저녁"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 하루의저녁</p>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-blending(다이너마이트).jpg" alt="다이너마이트"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 다이너마이트티 </h5>
-                    <P class="KR-font"> 향이 있어 지칠 때 마시면 기분 좋아지는 블렌딩티 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-blending(레인와인의향기).jpg" alt="레인와인의향기"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 레드와인의향기 </h5>
-                    <P class="KR-font"> 루후나 홍차에 와인의 드라이함을 주는 마테, 보이차를 블렌딩한 티</P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-blending(블루스카이).jpg" alt="블루스카이"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 블루스카이 </h5>
-                    <P class="KR-font"> 홍차의 블루마운틴 닐기리 홍차에 콘플라워, 라즈베리향, 바닐라향을 블렌딩한 티</P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-blending(웨딩드레스티).jpg" alt="웨딩드레스티"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 웨딩드레스티 </h5>
-                    <P class="KR-font"> 누와라엘리야에 웨딩드레스의 흰색에서 착안한 화이트티와 귤꽃향을 블렌딩한 차 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-blending(잉글리쉬브렉퍼스트).jpg" alt="잉글리쉬브렉퍼스트"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 잉글리쉬 <br/> 브렉퍼스트 </h5>
-                    <P class="KR-font"> 잉글리쉬브렉퍼스트는 아침을 깨우는 진한 맛과 향이 특징인 클래식블렌드 </P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-blending(제주감귤그린티).jpg" alt="제주감귤그린티"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 제주감귤그린티 </h5>
-                    <P class="KR-font"> 녹차 잎이 살아있는 작설차에 상큼한 제주산 감귤피와 영귤향을 블렌딩한 티</P>
-                  </div>
-                </div>
-
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-blending(하루의저녁).jpg" alt="하루의저녁"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 하루의저녁</h5>
-                    <P class="KR-font"> 녹차, 장미꽃, 제주산 귤피를 블렌딩한 티</P>
-                  </div>
-                </div>
-                
+                <button class="scroll-btn right-btn right-btn-2">
+                  <img class="btn" src="../images/rightBtn.png" alt="right icon"/>
+                </button>
               </div>
 
               <img class="pageLogo" src="../images/flavorLogo.png" alt="flavor Logo"/>
 
-              <div class="teaPhoto">
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-flavor(딸기향홍차).jpg" alt="딸기향홍차"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 딸기향홍차 </h5>
-                    <P class="KR-font"> 딸기향과 홍차의 깊은 맛과 어우러져 부드럽고 감미로운 과일 가향차 </P>
-                  </div>
-                </div>
+              <div class="centerImg">
+                <button class="scroll-btn left-btn left-btn-3">
+                  <img class="btn" src="../images/leftBtn.png" alt="left icon"/>
+                </button>
+                <div class="teaPhoto-wrapper">
+                  <div class="teaPhoto teaPhoto-3">
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-flavor(딸기향홍차).jpg" alt="딸기향홍차"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 딸기향홍차 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-flavor(샤인머스캣향홍차).jpg" alt="샤인머스캣향홍차"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 샤인머스캣향홍차 </h5>
-                    <P class="KR-font"> 홍차베이스에 샤인머스캣향을 블렌딩한 티</P>
-                  </div>
-                </div>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-flavor(샤인머스캣향홍차).jpg" alt="샤인머스캣향홍차"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 샤인머스캣향홍차 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-flavor(애플향홍차).jpg" alt="애플향홍차"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 애플향홍차 </h5>
-                    <P class="KR-font"> 상쾌한 사과의 향기가 퍼지는 향기로운 풍미의 애플티 </P>
-                  </div>
-                </div>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-flavor(애플향홍차).jpg" alt="애플향홍차"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 애플향홍차 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-flavor(자몽향홍차).jpg" alt="자몽향홍차"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 자몽향홍차 </h5>
-                    <P class="KR-font"> 홍차 베이스에 톡톡 터지는 상큼한 자몽향을 느낄 수 있는 티 </P>
-                  </div>
-                </div>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-flavor(자몽향홍차).jpg" alt="자몽향홍차"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 자몽향홍차 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-flavor(자몽허니향블랙티).jpg" alt="자몽허니향블랙티"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 자몽허니향 <br/> 블랙티 </h5>
-                    <P class="KR-font"> 자몽과 허니향이 강하게 느껴지며 홍차맛이 조화롭게 받쳐주는 티 </P>
-                  </div>
-                </div>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-flavor(자몽허니향블랙티).jpg" alt="자몽허니향블랙티"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 자몽허니향 <br/>블랙티 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-flavor(피치향우롱차).jpg" alt="피치향우롱차"/>
-                  <div class="ImgInfo">
-                    <h5 class="KR-font"> 피치향우롱차 </h5>
-                    <P class="KR-font"> 우롱차에 잘 익은 복숭아 향을 블렌딩한 티 </P>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-flavor(피치향우롱차).jpg" alt="피치향우롱차"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 피치향우롱차 </p>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
-                
+                <button class="scroll-btn right-btn right-btn-3">
+                  <img class="btn" src="../images/rightBtn.png" alt="right icon"/>
+                </button>
               </div>
 
               <img class="pageLogo" src="../images/milkTeaLogo.png" alt="milkTea Logo"/>
 
-              <div class="teaPhoto">
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-milkTea(딸기밀크티).jpg" alt="딸기밀크티"/>
-                  <div class="ImgInfo">
-                    <h4 class="KR-font"> 딸기 밀크티백 </h4>
-                    <P class="KR-font"> 잘 익은 딸기의 상큼함을 한가득 담은 밀크티를 간편하게 만들 수 있는 티백 </P>
-                  </div>
-                </div>
+              <div class="centerImg">
+                <button class="scroll-btn left-btn left-btn-4">
+                  <img class="btn" src="../images/leftBtn.png" alt="left icon"/>
+                </button>
+                <div class="teaPhoto-wrapper">
+                  <div class="teaPhoto teaPhoto-4">
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-milkTea(딸기밀크티).jpg" alt="딸기밀크티"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 딸기 밀크티백 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-milkTea(슈크림향홍차).jpg" alt="슈크림향홍차"/>
-                  <div class="ImgInfo">
-                    <h4 class="KR-font"> 슈크림향 <br/> 밀크티백 </h4>
-                    <P class="KR-font"> 부드럽고 고소한 슈크림향을 담은 초간편 수제 밀크티를 위한 티백 </P>
-                  </div>
-                </div>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-milkTea(슈크림향홍차).jpg" alt="슈크림향홍차"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 슈크림향 <br/> 밀크티백 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-milkTea(아쌈 밀크티).jpg" alt="아쌈 밀크티"/>
-                  <div class="ImgInfo">
-                    <h4 class="KR-font"> 아쌈 밀크티백 </h4>
-                    <P class="KR-font"> 아쌈 홍차의 풍미를 담은 밀크티를 만드는 티백 </P>
-                  </div>
-                </div>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-milkTea(아쌈 밀크티).jpg" alt="아쌈 밀크티"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 아쌈 밀크티백 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-milkTea(얼그레이 밀크티).jpg" alt="얼그레이 밀크티"/>
-                  <div class="ImgInfo">
-                    <h4 class="KR-font"> 얼그레이 <br/> 밀크티백 </h4>
-                    <P class="KR-font"> 베르가못향이 진하게 느껴지는 얼그레이 밀크티를 만들 수 있는 티백 </P>
-                  </div>
-                </div>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-milkTea(얼그레이 밀크티).jpg" alt="얼그레이 밀크티"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 얼그레이 <br/> 밀크티백 </p>
+                      </div>
+                    </div>
 
-                <div class="information">
-                  <img class="teaImg" src="../images/Photo-milkTea(얼그레이바닐라).jpg" alt="얼그레이바닐라"/>
-                  <div class="ImgInfo">
-                    <h4 class="KR-font"> 얼그레이바닐라 밀크티백 </h4>
-                    <P class="KR-font"> 바닐라 향이 향긋한 얼그레이 홍차와 어우러지는 밀크티 티백 </P>
+                    <div class="information">
+                      <img class="teaImg" src="../images/Photo-milkTea(얼그레이바닐라).jpg" alt="얼그레이바닐라"/>
+                      <div class="ImgInfo">
+                        <p class="text-regular"> 얼그레이바닐라 밀크티백 </p>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
-                
+                <button class="scroll-btn right-btn right-btn-4">
+                  <img class="btn" src="../images/rightBtn.png" alt="right icon"/>
+                </button>
               </div>
 
             </div>
@@ -332,5 +348,7 @@
   
 
   <div id="footer"></div>
+
 </body>
+
 </html>

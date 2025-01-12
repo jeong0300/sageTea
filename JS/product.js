@@ -40,47 +40,50 @@ const changeLogoAnimation = () => {
 
 // 스크롤 애니메이션 중에 로고 전환
 const scrollAnimation = () => {
-  const backCircle = document.querySelector('.backCircle');
-  const sagelogo = document.querySelector('.sagelogo');
-  const tealogo = document.querySelector('.tealogo');
+  return new Promise((resolve) => {
+    const backCircle = document.querySelector('.backCircle');
+    const sagelogo = document.querySelector('.sagelogo');
+    const tealogo = document.querySelector('.tealogo');
 
-  if (backCircle) {
-    backCircle.style.transform = 'scale(10)';
-    backCircle.style.transition = 'transform 1s ease-out';
-  }
-
-  document.body.style.transition = 'background-color 1s ease-out';
-  document.body.style.backgroundColor = '#143321';
-  document.body.classList.add('no-scroll');
-
-  setTimeout(() => {
-    // 원래 로고 사라짐
-    if (sagelogo && tealogo) {
-      sagelogo.style.opacity = 0;
-      tealogo.style.opacity = 0;
+    if (backCircle) {
+      backCircle.style.transform = 'scale(10)';
+      backCircle.style.transition = 'transform 1s ease-out';
     }
 
-    // 변경된 로고 나타남
-    setTimeout(() => {
-      const teaMenu = document.querySelector('.teaMenu');
-      teaMenu.style.marginTop = '120px';
-      changeLogoAnimation();
+    document.body.style.transition = 'background-color 1s ease-out';
+    document.body.style.backgroundColor = '#143321';
+    document.body.classList.add('no-scroll');
 
-      // 애니메이션 종료 후 스크롤 허용
+    setTimeout(() => {
+      // 원래 로고 사라짐
+      if (sagelogo && tealogo) {
+        sagelogo.style.opacity = 0;
+        tealogo.style.opacity = 0;
+      }
+
+      // 변경된 로고 나타남
       setTimeout(() => {
-        document.body.classList.remove('no-scroll');
-      }, 1000); // changeLogoAnimation과 동일한 시간
-    }, 1000); // backCircle 애니메이션 시간
-  }, 1000); // 초기 애니메이션 시간
+        const teaMenu = document.querySelector('.teaMenu');
+        if (teaMenu) {
+          teaMenu.style.marginTop = '120px';
+        }
+        changeLogoAnimation();
+
+        // 애니메이션 종료 후 스크롤 허용
+        setTimeout(() => {
+          document.body.classList.remove('no-scroll');
+          resolve(); // Promise 완료
+        }, 1000); // changeLogoAnimation과 동일한 시간
+      }, 1000); // backCircle 애니메이션 시간
+    }, 1000); // 초기 애니메이션 시간
+  });
 };
 
 // 페이지가 처음 로드될 때 애니메이션을 실행
 document.addEventListener('DOMContentLoaded', () => {
   if (!sessionStorage.getItem('loaded')) {
-
     sessionStorage.setItem('loaded', 'true');
     logoAnimation();
-
   } else {
     // 이미 로드된 경우에는 스크롤 위치만 조정
     window.scrollTo(0, 0);
@@ -89,8 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 페이지 전환 시 로고 애니메이션 재실행
 window.addEventListener('pageshow', () => {
-
-  window.scrollTo(0, 0); 
+  window.scrollTo(0, 0);
 
   // 애니메이션 실행
   logoAnimation();
@@ -106,12 +108,17 @@ window.addEventListener('pageshow', () => {
       scrollTriggered = true;
       disableScroll = true;
 
-      scrollAnimation().then(() => {
-        disableScroll = false;
-      });
+      scrollAnimation()
+        .then(() => {
+          disableScroll = false;
+        })
+        .catch((error) => {
+          console.error("Scroll animation error:", error);
+        });
     }
   });
 });
+
 
 // scroll down
 window.addEventListener('scroll', function() {
@@ -123,7 +130,7 @@ window.addEventListener('scroll', function() {
   const windowHeight = window.innerHeight; // 뷰포트의 높이
   
   // .scrollDown 요소의 top이 화면의 50%를 지날 때
-  if (scrollDownPosition <= windowHeight / 1) {
+  if (scrollDownPosition <= windowHeight / 2) {
     downLine.style.height = '200px';
   } else {
     downLine.style.height = '0px';
@@ -174,6 +181,61 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault(); 
     });
   });
+});
+
+// 버튼 클릭 시 스크롤 이동
+document.addEventListener('DOMContentLoaded', () => {
+  function smoothScroll(element, delta, duration) {
+    const start = element.scrollLeft;
+    const end = start + delta;
+    const startTime = performance.now();
+
+    function animateScroll(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1); // 0에서 1 사이 값
+      const ease = progress < 0.5
+        ? 2 * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 2) / 2; // Ease-in-out
+
+      element.scrollLeft = start + (end - start) * ease;
+
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
+      }
+    }
+
+    requestAnimationFrame(animateScroll);
+  }
+
+  function attachScrollButtons(leftBtnClass, rightBtnClass, scrollElementClass, scrollAmount, duration) {
+    const leftBtn = document.querySelector(leftBtnClass);
+    const rightBtn = document.querySelector(rightBtnClass);
+    const scrollElement = document.querySelector(scrollElementClass);
+
+    if (leftBtn && rightBtn && scrollElement) {
+      leftBtn.addEventListener('click', () => {
+        smoothScroll(scrollElement, -scrollAmount, duration);
+      });
+
+      rightBtn.addEventListener('click', () => {
+        smoothScroll(scrollElement, scrollAmount, duration);
+      });
+    } else {
+      console.error(`요소를 찾을 수 없습니다: ${leftBtnClass}, ${rightBtnClass}, ${scrollElementClass}`);
+    }
+  }
+
+  // 첫 번째 버튼 및 스크롤 영역
+  attachScrollButtons('.left-btn-1', '.right-btn-1', '.teaPhoto-1', 1000, 1000);
+
+  // 두 번째 버튼 및 스크롤 영역
+  attachScrollButtons('.left-btn-2', '.right-btn-2', '.teaPhoto-2', 1000, 1000);
+
+  // 세 번째 버튼 및 스크롤 영역
+  attachScrollButtons('.left-btn-3', '.right-btn-3', '.teaPhoto-3', 1000, 1200);
+
+  // 네 번째 버튼 및 스크롤 영역
+  attachScrollButtons('.left-btn-4', '.right-btn-4', '.teaPhoto-4', 1000, 1200);
 });
 
 // footer 로드

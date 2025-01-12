@@ -258,6 +258,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 두 번째 복제 추가 (필요한 경우)
+  // 두 번째 복제 추가
   cloneImages();
 });

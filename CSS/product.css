@@ -10,7 +10,7 @@ body.no-scroll {
 }
 
 .kR-font {
-  font-family: "IBM Plex Sans KR", serif;
+  font-family: "Gowun Batang", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -27,8 +27,13 @@ body.no-scroll {
   font-size: 200px;
 }
 
-/* 로고 */
+.text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
+/* 로고 */
 .teaMenu {
   position: relative;
   top: 0;
@@ -238,26 +243,30 @@ body.no-scroll {
   margin-bottom: 50px;
 }
 
-.teaPhoto{
+.centerImg{
   max-width: 80%;
-  overflow-x: auto;
-  overflow-y: hidden;
   display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.teaPhoto-wrapper{
+  max-width: 100%;
+  margin: 0 10px;
+  overflow-y: hidden;
+}
+
+.teaPhoto{
+  display: flex;
+  overflow-x: auto;
   margin-bottom: 50px;
+  gap: 10px;
+  scroll-behavior: unset;
 }
 
-.teaPhoto::-webkit-scrollbar-button{
+.teaPhoto::-webkit-scrollbar {
   display: none;
-}
-
-.teaPhoto::-webkit-scrollbar{
-  height: 8px;
-}
-
-.teaPhoto::-webkit-scrollbar-thumb {
-  background-color: #b5bfb8;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
 .teaImg{
@@ -279,6 +288,7 @@ body.no-scroll {
   text-align: center;
   display: inline-block;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .ImgInfo p{
@@ -295,15 +305,41 @@ body.no-scroll {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 25px;
+  top: 10px;
   left: 40px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+  background-color: #143321ae;
+  color: white;
+  padding-top: 10px;
   border-radius: 10px;
 }
 
 .information:hover .ImgInfo {
   opacity: 1;
+}
+
+/* 버튼 */
+.scroll-btn {
+  width: 70px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  background-color: rgba(245, 222, 179, 0);
+}
+
+.scroll-btn img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.right-btn{
+  margin-left: 10px;
+}
+
+.btn{
+  width: 55px;
+  height: 50px;
 }
