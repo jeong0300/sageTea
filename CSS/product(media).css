@@ -1,5 +1,50 @@
+@media screen and (max-width: 1400px){
+  .sagelogo {
+    top: 150px;
+  }
+
+  .tealogo{
+    bottom: 150px;
+  }
+
+  .backCircle {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .tealogo{
+    bottom: 130px;
+  }
+
+  .backCircle {
+    margin-left: 9%;
+  }
+
+  .centerImg{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 860px){
+  .centerImg{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .sagelogo{
+    width: 55%;
+  }
+  .backCircle {
+    margin-left: 5%;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .sagelogo {
+    width: 60%;
     top: 150px;
   }
   
@@ -7,8 +52,16 @@
     bottom: 150px;
   }
 
+  .changeSage{
+    width: 55%;
+  }
+
   .photo2{
     height: 260vh;
+  }
+
+  .centerImg{
+    width: 100%;
   }
 
   .productPage{
