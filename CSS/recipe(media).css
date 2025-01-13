@@ -1,23 +1,30 @@
 @media screen and (max-width: 1280px) {
-    .icon{
-        display: none;
-    }
+  .icon{
+    display: none;
+  }
 
-    .recipeLogo{
-        animation-delay: 1s;
-      }
-      
-      .recipeText{
-        animation-delay: 2s;
-      }
+  .recipeLogo{
+    animation-delay: 1s;
+  }
+    
+  .recipeText{
+    animation-delay: 2s;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .recipeText{
-        max-width: 80%;
-    }
+  .recipeText{
+    max-width: 80%;
+  }
 }
 
-@media screen and (max-width: 678px) {
-    
+@media screen and (max-width: 768px) {
+  .recipeMenu{
+    flex-direction: column;
+  }
+
+  .recipeImg{
+    margin: 0 auto;
+    width: 80%;
+  }
 }
