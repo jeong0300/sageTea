@@ -66,27 +66,26 @@
 
     <div class="recipeImgs">
       <div class="recipeMenu">
-        <img class="recipeImg" src="../images/recipe(밀크티).jpg" alt="MilkTea 레시피" data-bs-toggle="modal" data-bs-target="#milkTeaModal" />
-        <img class="recipeImg" src="../images/recipe(아이스티).jpg" alt="IceTea 레시피" data-bs-toggle="modal" data-bs-target="#iceTeaModal" />
-        <img class="recipeImg" src="../images/recipe(티에이드).jpg" alt="TeAde 레시피" data-bs-toggle="modal" data-bs-target="#teaAdeModal" />
+        <img class="recipeImg" onclick="onClickImg('milkTeaModal')" src="../images/recipe(밀크티).jpg" alt="MilkTea 레시피" />
+        <img class="recipeImg" onclick="onClickImg('iceTeaModal')" src="../images/recipe(아이스티).jpg" alt="IceTea 레시피" />
+        <img class="recipeImg" onclick="onClickImg('teaAdeModal')" src="../images/recipe(티에이드).jpg" alt="TeAde 레시피" />
       </div>
       <div class="recipeMenu">
-        <img class="recipeImg" src="../images/recipe(티칵테일).jpg" alt="Tea Cocktail 레시피" data-bs-toggle="modal" data-bs-target="#teaCocktailModal" />
-        <img class="recipeImg" src="../images/recipe(티스파클링).jpg" alt="Tea Sparkling 레시피" data-bs-toggle="modal" data-bs-target="#teaSparklingModal" />
-        <img class="recipeImg" src="../images/recipe(스트레이트티).jpg" alt="Straight Tea 레시피" data-bs-toggle="modal" data-bs-target="#straightTeaModal" />
+        <img class="recipeImg" onclick="onClickImg('teaCocktailModal')" src="../images/recipe(티칵테일).jpg" alt="Tea Cocktail 레시피"  />
+        <img class="recipeImg" onclick="onClickImg('teaSparklingModal')" src="../images/recipe(티스파클링).jpg" alt="Tea Sparkling 레시피" />
+        <img class="recipeImg" onclick="onClickImg('straightTeaModal')" src="../images/recipe(스트레이트티).jpg" alt="Straight Tea 레시피" />
       </div>
     </div>
 
     <!-- milkTea -->
-    <div class="modal fade" id="milkTeaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="milkTeaLabel" aria-hidden="true">
+    <div class="modal fade" id="milkTeaModal"  tabindex="-1" aria-labelledby="milkteaLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5 bold" id="milkTeaLabel">milkTea</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5 bold" id="milkteaLabel">milkTea</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
           </div>
           <div class="modal-body">
-
             <p class="kR-font bold"> 티백 차로 밀크티 만들기 </p>
             <img class="recipeGif" src="../images/recipe-milkTea.gif" alt="milkTea-recipe">
             <img class="recipeGif" src="../images/recipe-milkTea2.gif" alt="milkTea-recipe">
@@ -171,6 +170,8 @@
                 <p class="kR-font"> 냉장고에 <br/> 5-12시간 </p>
               </div>
             </div>
+
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
@@ -178,108 +179,8 @@
       </div>
     </div>
 
-    <div class="modal fade" id="iceTeaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="iceTeaLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 bold" id="iceTeaLabel">milkTea</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-
-            <p class="kR-font bold"> 티백 차로 밀크티 만들기 </p>
-            <img class="recipeGif" src="../images/recipe-milkTea.gif" alt="milkTea-recipe">
-            <img class="recipeGif" src="../images/recipe-milkTea2.gif" alt="milkTea-recipe">
-            
-            <div class="ingredients">
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 티백 3개 <br/> 잎차 6g </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg2.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 60ml </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg3.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 140ml </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg4.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 5~15g </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg5.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 뜨거운 물에 <br/> 5분 이상 </p>
-              </div>
-            </div>
-
-            <hr/>
-
-            <p class="kR-font bold"> [HOT BREW] 밀크티용홍차로 밀크티 만들기 </p>
-            <img class="recipeGif" src="../images/recipe-milkTea3.gif" alt="milkTea-recipe">
-            <img class="recipeGif" src="../images/recipe-milkTea4.gif" alt="milkTea-recipe">
-            
-            <div class="ingredients">
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 잎차 10g </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg2.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> [HOT] 90ml </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg3.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> [HOT] 180ml </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg4.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 13~17g </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg5.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 뜨거운 물에 <br/> 5분 이상 </p>
-              </div>
-            </div>
-
-            <hr/>
-
-            <p class="kR-font bold"> [COLD BREW] 밀크티용홍차로 밀크티 만들기 </p>
-            <img class="recipeGif" src="../images/recipe-milkTea5.gif" alt="milkTea-recipe">
-            <img class="recipeGif" src="../images/recipe-milkTea6.gif" alt="milkTea-recipe">
-            
-            <div class="ingredients">
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 잎차 10g </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg2.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> [HOT] 30ml </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg3.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> [COLD] 180ml </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg4.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 13~17g </p>
-              </div>
-              <div class="ingredient">
-                <img class="ingredientImg" src="../images/recipe-milkTeaImg5.gif" alt="milkTea-recipe-icon"/>
-                <p class="kR-font"> 냉장고에 <br/> 5-12시간 </p>
-              </div>
-            </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- iceTea-->
-    <div class="modal fade" id="iceTeaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="iceTeaLabel" aria-hidden="true">
+    <!-- iceTea -->
+    <div class="modal fade" id="iceTeaModal" tabindex="-1" aria-labelledby="iceTeaLabel" aria-hidden="true" >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -477,8 +378,11 @@
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
+  </div>
+  
   <div id="footer"></div>
+
 </body>
 </html>

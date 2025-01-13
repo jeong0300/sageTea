@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
         centers.forEach((center, index) => {
           setTimeout(() => {
             center.classList.add("active");
-          }, index * 200); // 각 요소에 딜레이 적용
+          }, index * 300); // 각 요소에 딜레이 적용
         });
 
         // 한 번만 동작하도록 observer에서 해제

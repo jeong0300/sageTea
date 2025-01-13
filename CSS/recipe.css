@@ -156,6 +156,14 @@
 .recipeImg{
   width: 33%;
   cursor: pointer;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity 0.8s ease-out;
+}
+
+.recipeImg.active {
+  opacity: 1;
+  transform: translateY(0); /* 이미지가 서서히 나타나며 위로 올라옴 */
 }
 
 /* 모달 content */
