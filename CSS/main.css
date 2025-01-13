@@ -232,7 +232,7 @@ html {
 .bestfive{
   position: absolute;
   margin-top: 300px;
-  margin-left: 80%;
+  right: 5px;
 }
 
 /* 레시피 */

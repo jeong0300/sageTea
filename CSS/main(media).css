@@ -1,5 +1,144 @@
 
 /* 반응형 */
+
+@media screen and (max-width: 1470px){
+  .bestTea{
+    height: 1250px;
+  }
+
+  .bestone{
+    margin-left: 38%;
+  }
+
+  .besttwo{
+    margin-top: 600px;
+  }
+  
+  .bestthree{
+    margin-top: 600px;
+    margin-left: 57%;
+  }
+
+  .bestfour{
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1240px){
+  .bestTea{
+    height: 1300px;
+  }
+
+  .besttwo{
+    margin-top: 650px;
+  }
+  
+  .bestthree{
+    margin-top: 650px;
+    margin-left: 57%;
+  }
+}
+
+@media screen and (max-width: 1128px){
+  .besttwo{
+    margin-top: 680px;
+  }
+  
+  .bestthree{
+    margin-top: 680px;
+    margin-left: 56%;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .bestTea{
+    height: 1350px;
+  }
+
+  .bestone{
+    margin-left: 36%;
+  }
+
+  .besttwo{
+    margin-top: 690px;
+  }
+  
+  .bestthree{
+    margin-top: 690px;
+    margin-left: 55%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .bestone{
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 965px){
+  .bestTea{
+    height: 1400px;
+  }
+
+  .bestone{
+    margin-left: 35%;
+  }
+
+  .besttwo{
+    margin-top: 720px;
+  }
+  
+  .bestthree{
+    margin-top: 720px;
+  }
+}
+
+@media screen and (max-width: 920px){
+  /* best */
+  .content {
+    left: 46%;
+  }
+
+  .bestTea{
+    height: 2900px;
+  }
+
+  .circleMove{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circleMove h1{
+    margin: 100px auto 0 auto;
+  }
+
+  .bestone{
+    position: block;
+    margin: 250px auto 0 auto;
+  }
+  
+  .besttwo{
+    position: block;
+    margin: 750px auto 0 auto;
+  }
+  
+  .bestthree{
+    position: block;
+    margin: 1250px auto 0 auto;
+  }
+  
+  .bestfour{
+    position: block;
+    margin: 1750px auto 0 auto;
+  }
+  
+  .bestfive{
+    position: block;
+    margin: 2250px auto 0 auto;
+    right: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   
     /* 네비게이션바 */
@@ -34,49 +173,6 @@
     .type{
       width: 100%;
       height: 100%;
-    }
-  
-    /* best */
-    .content {
-      left: 46%;
-    }
-  
-    .bestTea{
-      height: 2900px;
-    }
-  
-    .circleMove{
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .circleMove h1{
-      margin: 100px auto 0 auto;
-    }
-  
-    .bestone{
-      position: block;
-      margin: 250px auto 0 auto;
-    }
-    
-    .besttwo{
-      position: block;
-      margin: 750px auto 0 auto;
-    }
-    
-    .bestthree{
-      position: block;
-      margin: 1250px auto 0 auto;
-    }
-    
-    .bestfour{
-      position: block;
-      margin: 1750px auto 0 auto;
-    }
-    
-    .bestfive{
-      position: block;
-      margin: 2250px auto 0 auto;
     }
   
     /* 레시피 */
