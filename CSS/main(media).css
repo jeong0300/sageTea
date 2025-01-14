@@ -22,6 +22,14 @@
   .bestfour{
     margin-left: 20px;
   }
+
+  .fixHeight .carousel{
+    height: 500px;
+  }
+
+  .back-image{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1240px){
