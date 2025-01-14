@@ -110,8 +110,8 @@ html {
 
 .typeup.active,
 .center.active {
-  transform: translateY(0); /* 원래 위치로 이동 */
-  opacity: 1; /* 보이도록 */
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* 라인 */

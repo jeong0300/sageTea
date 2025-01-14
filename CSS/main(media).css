@@ -235,3 +235,11 @@
     }
   
   }
+
+  @media screen and (max-width: 500px) {
+    .bestLogo{
+      width: 100%;
+    }
+
+    
+  }
