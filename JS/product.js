@@ -81,8 +81,8 @@ const scrollAnimation = () => {
 
 // 페이지가 처음 로드될 때 애니메이션을 실행
 document.addEventListener('DOMContentLoaded', () => {
-  if (!sessionStorage.getItem('loaded')) {
-    sessionStorage.setItem('loaded', 'true');
+  if (!sessionStorage.getItem('loaded')) { 
+    sessionStorage.setItem('loaded', 'true'); //페이지가 로드 되었을 때 함수 호출
     logoAnimation();
   } else {
     // 이미 로드된 경우에는 스크롤 위치만 조정
@@ -97,15 +97,15 @@ window.addEventListener('pageshow', () => {
   // 애니메이션 실행
   logoAnimation();
 
-  let scrollTriggered = false;
-  let disableScroll = false;
+  let scrollTriggered = false; // 스크롤 이벤트 실행 여부 저장
+  let disableScroll = false; // 실행 중에 추가 이벤트가 처리되지 않게 차단
 
   window.addEventListener('scroll', () => {
-    if (disableScroll) return;
+    if (disableScroll) return; // 애니메이션 실행 중일 땐 스크롤 이벤트 종료
 
     const scrollThreshold = 1;
     if (!scrollTriggered && window.scrollY > scrollThreshold) {
-      scrollTriggered = true;
+      scrollTriggered = true; 
       disableScroll = true;
 
       scrollAnimation()
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// 버튼 클릭 시 스크롤 이동
+// 버튼 클릭 시 부드럽게 이동
 document.addEventListener('DOMContentLoaded', () => {
   function smoothScroll(element, delta, duration) {
     const start = element.scrollLeft;
@@ -194,8 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1); // 0에서 1 사이 값
       const ease = progress < 0.5
-        ? 2 * progress * progress
-        : 1 - Math.pow(-2 * progress + 2, 2) / 2; // Ease-in-out
+        ? 2 * progress * progress // 초반엔 빠르게 가속
+        : 1 - Math.pow(-2 * progress + 2, 2) / 2; // 후반엔 느리게 감속
 
       element.scrollLeft = start + (end - start) * ease;
 
@@ -207,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(animateScroll);
   }
 
+  // 버튼 클릭 시 스크롤 이동ㄴ
   function attachScrollButtons(leftBtnClass, rightBtnClass, scrollElementClass, scrollAmount, duration) {
     const leftBtn = document.querySelector(leftBtnClass);
     const rightBtn = document.querySelector(rightBtnClass);

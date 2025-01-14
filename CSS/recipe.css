@@ -101,7 +101,7 @@
   width: 300px;
   top: 30%;
   right: 10%;
-  transform: translateX(150%);
+  transform: translateX(160%);
   animation: slideIn 1s ease-out forwards;
   animation-delay: 2s;
 }
