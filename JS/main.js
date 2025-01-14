@@ -59,10 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
   
   teaSections.forEach(section => {
     const pictureDiv = document.createElement("div");
-    pictureDiv.classList.add("picture");
+    pictureDiv.classList.add("picture"); //addEventListener 사용할 div
   
     const typeupDiv = document.createElement("div");
-    typeupDiv.classList.add("typeup"); //addEventListener 사용할 예정
+    typeupDiv.classList.add("typeup"); 
   
     const titleImg = document.createElement("img");
     titleImg.classList.add("type");
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     typeupDiv.appendChild(titleImg);
   
     const autoMoveDiv = document.createElement("div");
-    autoMoveDiv.classList.add("autoMove"); //addEventListener 사용할 예정
+    autoMoveDiv.classList.add("autoMove");
   
     section.teas.forEach(tea => {
       const centerDiv = document.createElement("div");
@@ -86,11 +86,13 @@ document.addEventListener("DOMContentLoaded", () => {
       teaName.classList.add("kR-font");
       teaName.textContent = tea.name;
   
+      // 하위 요소 지정
       centerDiv.appendChild(teaImg);
       centerDiv.appendChild(teaName);
       autoMoveDiv.appendChild(centerDiv);
     });
   
+    // 하위 요소 지정
     pictureDiv.appendChild(typeupDiv);
     pictureDiv.appendChild(autoMoveDiv);
     teaSection.appendChild(pictureDiv);
@@ -175,8 +177,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // color 영역에 닿았을 때
     if (scrollPosition + window.innerHeight >= colorPosition) {
       // line의 길이 증가
-      const maxHeight = 100; // line의 최대 높이
-      const maxScroll = 100; // line이 늘어나는 최대 스크롤 값
+      const maxHeight = 100;
+      const maxScroll = 100;
 
       const height = Math.min((scrollPosition / maxScroll) * maxHeight, maxHeight);
       line.style.height = height + "px";
@@ -185,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (height >= maxHeight) {
         underline.style.transform = "translateY(90px)";
         const under = document.querySelector(".under");
-        under.style.opacity = 1; // Underline 이동 시 이미지 표시
+        under.style.opacity = 1;
       } else {
         underline.style.transform = "translateY(0)";
       }
