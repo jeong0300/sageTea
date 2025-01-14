@@ -95,7 +95,7 @@ body.no-scroll {
   width: 50%;
   max-width: 500px;
   height: auto;
-  top: 190px;
+  top: 30%;
   left: 20%;
   transform: translateX(-110%);
   opacity: 0;
@@ -107,7 +107,7 @@ body.no-scroll {
   width: 45%;
   max-width: 400px;
   height: auto;
-  bottom: 190px;
+  bottom: 30%;
   right: 20%;
   transform: translateX(110%);
   opacity: 0;
