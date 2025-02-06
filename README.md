@@ -2,21 +2,25 @@
 
 <br/>
 
-## 🔖 목차
+## 🔖 목차  
 
-[1. 프로젝트 소개](#-프로젝트-소개)
+<div align="center">
+ 
+ 📌 **[1. 프로젝트 소개](#-프로젝트-소개)**
+ 
+ 📌 **[2. 개발 동기](#-개발-동기)**
+ 
+ 📌 **[3. 개발 기간](#-개발-기간)**
+ 
+ 📌 **[4. 개발 환경](#-개발-환경)**
+ 
+ 📌 **[5. 프로토타입](#-프로토타입)**
+ 
+ 📌 **[6. 화면 구성](#-화면-구성)**
+ 
+ 📌 **[7. 반응형 화면 구성](#-반응형-화면-구성)**
 
-[2. 개발 동기](#-개발-동기)
-
-[3. 개발 기간](#-개발-기간)
-
-[4. 개발 환경](#-개발-환경)
-
-[5. 프로토타입](#-프로토타입)
-
-[6. 화면 구성](#-화면-구성)
-
-[6. 반응형 화면 구성](#-반응형-화면-구성)
+</div>
 
 # 📄 프로젝트 소개
 
@@ -59,13 +63,17 @@
 
 # 📝 프로토타입
 
-<div align="center" style="display: flex; gap: 10px;">
- <h3> WEB </h3>
- <h3> MOBILE </h3>
-</div>
-<div align="center" style="display: flex; gap: 10px;">
- <img style="width: 400px; height:600px" src="https://github.com/user-attachments/assets/760efe69-0674-4b8f-8486-9ade4e38ea40">
- <img style="width: 400px; height:600px" src="https://github.com/user-attachments/assets/b5bdbd4b-c828-4468-97f9-ff3c87a3f11c">
+<div align="center">
+ <table>
+  <tr>
+   <th> WEB </th>
+   <th> MOBILE </th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/760efe69-0674-4b8f-8486-9ade4e38ea40" width="400" height="600"></td>
+    <td><img src="https://github.com/user-attachments/assets/b5bdbd4b-c828-4468-97f9-ff3c87a3f11c" width="400" height="600"></td>
+  </tr>
+ </table>
 </div>
 
 <br/>
