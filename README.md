@@ -10,6 +10,14 @@
 
 [3. 개발 기간](#-개발-기간)
 
+[4. 개발 환경](#-개발-환경)
+
+[5. 프로토타입](#-프로토타입)
+
+[6. 화면 구성](#-화면-구성)
+
+[6. 반응형 화면 구성](#-반응형-화면-구성)
+
 # 📄 프로젝트 소개
 
 #### ‘에버티‘의 독창적인 티 제품 및 브랜드를 더 많은 사람들에게 알리고, 
@@ -24,7 +32,7 @@
 
 <br/>
 
-# 📄 개발 기간
+# 🗓 개발 기간
 
 #### 25.01.14 ~ 25.01.24 ( 총 10일 )
 
@@ -49,31 +57,54 @@
 
 <br/>
 
+# 📝 프로토타입
+
+<div align="center" style="display: flex; gap: 10px;">
+ <h3> WEB </h3>
+ <h3> MOBILE </h3>
+</div>
+<div align="center" style="display: flex; gap: 10px;">
+ <img style="width: 400px; height:600px" src="https://github.com/user-attachments/assets/760efe69-0674-4b8f-8486-9ade4e38ea40">
+ <img style="width: 400px; height:600px" src="https://github.com/user-attachments/assets/b5bdbd4b-c828-4468-97f9-ff3c87a3f11c">
+</div>
+
+<br/>
+
 # 📰 화면 구성
 
-<table>
+<div align="center">
+ <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/90ebae87-b8f1-4264-86c9-265808b7bf70" width="200" height="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/d7323a8d-be58-4a7e-b6c9-665ed152e3da" width="200" height="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/49553aa1-2f65-4c3a-81a5-332299481b75" width="200" height="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/6b654265-6af0-4fc1-869c-c698a059eb19" width="200" height="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/1bfb84db-4859-4e76-93a6-2c471c0fadec" width="200" height="400"></td>
+   <th> MAIN </th>
+   <th> PRODUCT </th>
+   <th> RECIPE </th>
   </tr>
-</table>
-
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a1d98eb7-1282-4111-ada4-bfa6c7fbfcfc" width="250" height="600"></td>
+    <td><img src="https://github.com/user-attachments/assets/8425b72a-41a3-4da9-829b-63a1eef68196" width="250" height="600"></td>
+    <td><img src="https://github.com/user-attachments/assets/cf8dc686-0e88-4144-8f92-9a9d12558d2e" width="300" height="600"></td>
+  </tr>
+ </table>
+</div>
 
 <br/>
 
 # 📱 반응형 화면 구성
 
-<table>
+<div align="center">
+ <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/18b211f5-fa48-4a58-8c7f-ab528aeffe64" width="300" height="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/f7d919d5-0516-424d-911e-f51ecdc488e4" width="150" height="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/779bcd17-417b-4cc5-9b2e-303216f33cd6" width="300" height="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/c6eb60ef-5a9e-4f90-8af5-a691aa8057e8" width="300" height="400"></td>
+   <th> MAIN </th>
+   <th> PRODUCT </th>
+   <th> RECIPE </th>
   </tr>
-</table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/ac581a47-064b-49a4-bc36-a22e99055741" width="100" height="700"></td>
+    <td><img src="https://github.com/user-attachments/assets/0b63a6c2-2785-4128-8807-e528ec8dd4e9" width="200" height="700"></td>
+    <td><img src="https://github.com/user-attachments/assets/8d133e1f-12c6-4a1d-afcf-1d5ba795d86f" width="200" height="700"></td>
+  </tr>
+ </table>
+</div>
 
 <br/>
 
