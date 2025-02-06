@@ -1,13 +1,11 @@
-<img src="https://github.com/user-attachments/assets/24d09599-4a05-4bfe-ae7b-e6c064cc4c53"/>
-
-<br/><br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=40&duration=3000&pause=1000&color=444444&center=true&vCenter=true&width=1000&lines=BEAR+CRAFT+SHOP)](https://git.io/typing-svg)
-
-<h3 align="center"> 🧸 곰 피규어 판매 등록 및 컬렉션 관리 사이트 </h3>
-<br/><br/><hr/>
+![Image](https://github.com/user-attachments/assets/ad661d67-114d-4f1a-8d45-e8ec7ffeac86)
 
 <br/>
+
+## 목차
+[1. 프로젝트 소개](#-📄-프로젝트-소개)
+[2. 개발 기간](#2-개발-기간)
+[3. 팀원 소개](#3-팀원-소개)
 
 # 📄 프로젝트 소개
 
