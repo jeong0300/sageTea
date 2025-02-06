@@ -3,9 +3,12 @@
 <br/>
 
 ## 🔖 목차
+
 [1. 프로젝트 소개](#-프로젝트-소개)
+
 [2. 개발 동기](#-개발-동기)
-[3. 팀원 소개](#팀원-소개)
+
+[3. 개발 기간](#-개발-기간)
 
 # 📄 프로젝트 소개
 
@@ -21,6 +24,12 @@
 
 <br/>
 
+# 📄 개발 기간
+
+#### 25.01.14 ~ 25.01.24 ( 총 10일 )
+
+<br/>
+
 # 🖥 개발 환경
 
 <div align="center">
@@ -32,6 +41,9 @@
 
   <h2> 버전 관리 </h2> 
   <img src="https://img.shields.io/badge/git-%23F05032.svg?&style=for-the-badge&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white" />
+
+  <h2> 라이브러리 </h2>
+  <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" />
 
 </div>
 
