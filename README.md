@@ -195,3 +195,13 @@
 </div>
 
 <br/>
+
+<h2> 🌟 모달창을 활용한 레시피 확인 </h2>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp부트스트랩을 활용하여 레시피를 구성</h4>
+<div align="center">
+ 
+ ![Image](https://github.com/user-attachments/assets/e9d663ab-7df9-4d37-832e-7bd04f983e25)
+
+</div>
+
+<br/>
