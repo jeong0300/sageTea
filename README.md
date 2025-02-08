@@ -117,19 +117,19 @@
 
 # ⚙ 주요 기능
 
-<h2> 🌟 카테고리 별 상품 등록, 수정, 삭제 </h2>
-<h3> 제품 등록 </h3>
-<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp카테고리 별 로컬 스토리지에 저장</h4>
+<h2> 🌟 애니메이션 </h2>
+<h3> 제품 떠오르게 하기 </h3>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp각 요소에 딜레이 적용하여 떠오르게 하기</h4>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/93840334-d851-4eb5-8f28-08a47dca1f5a">
+  <img src="https://github.com/user-attachments/assets/d09f2eb7-3702-43d9-b056-d8d89f99d70c">
 </div>
 
 <br/>
 
-<h3> 제품 수정 및 삭제 </h3>
-<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp수정 혹은 삭제 후 로컬 스토리지에 업데이트</h4>
+<h3> 스크롤 시 스타일 속성 변경 </h3>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp스크롤하여 해당 위치에 도달할 시 스크롤 라인 애니메이션 적용</h4>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6b24d6f9-0d6c-418d-9c6b-8a7774c97626">
+  <img src="https://github.com/user-attachments/assets/224c1574-7177-40c5-b502-bb0e408c8096">
 </div>
 
 <br/>
