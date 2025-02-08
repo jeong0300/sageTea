@@ -144,7 +144,8 @@
 
 <br/>
 
-<h2> 🌟 이미지 반복 </h2>
+<h2> 🌟 이미지, 텍스트 반복 </h2>
+<h3> js로 동적인 이미지 반복 </h3>
 <h4>&nbsp&nbsp&nbsp&nbsp-&nbsp함수 호출하여 공백없이 반복</h4>
 <div align="center">
 
@@ -154,12 +155,43 @@
 
 <br/>
 
-<h2> 🌟 스크롤 시 요소 고정 </h2>
+<h3> css로 정적인 텍스트 반복 </h3>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp 애니메이션을 활용한 텍스트 반복</h4>
+<div align="center">
+
+ ![Image](https://github.com/user-attachments/assets/2d227aa4-bff7-411a-a968-f569b4e2d947)
+
+</div>
+
+<br/>
+
+<h2> 🌟 요소 고정 및 스크롤 이동 </h2>
+<h3> 요소 고정 </h3>
 <h4>&nbsp&nbsp&nbsp&nbsp-&nbsp sticky를 활용해 스크롤 시 지정 지점에서 요소 고정</h4>
 <div align="center">
 
  ![Image](https://github.com/user-attachments/assets/98d63e03-2f65-4cee-ab14-d8fac9b4e23c)
  
+</div>
+
+<br/>
+
+<h3> 스크롤 이동 </h3>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp버튼 클릭 시 스크롤 이동</h4>
+<div align="center">
+
+ ![Image](https://github.com/user-attachments/assets/18d61968-b7dc-4fe4-bd40-47446e3853f4)
+ 
+</div>
+
+<br/>
+
+<h2> 🌟 드래그 스크롤 </h2>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp마우스 이벤트를 활용한 드래그 스크롤 기능</h4>
+<div align="center">
+ 
+ ![Image](https://github.com/user-attachments/assets/4119cd6d-ef1a-4996-a69d-e01be744b4d1)
+
 </div>
 
 <br/>
