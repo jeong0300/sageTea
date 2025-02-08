@@ -134,35 +134,32 @@
 
 <br/>
 
-<h2> 🌟 카테고리 별 상품 출력 </h2>
-<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp로컬 스토리지에 저장된 카테고리에 따라 버튼 클릭 시 해당 제품들 출력</h4>
+<h2> 🌟 드래그 스크롤 </h2>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp마우스 이벤트를 활용한 드래그 스크롤 기능</h4>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/25d33623-bc39-4c80-a785-9fade1477021">
+ 
+ ![Image](https://github.com/user-attachments/assets/4119cd6d-ef1a-4996-a69d-e01be744b4d1)
+
 </div>
 
 <br/>
 
-<h2> 🌟 즐겨찾기 </h2>
-<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp즐겨찾기 눌렀을 때 기존 로컬 스토리지에 즐겨찾기 항목 추가</h4>
+<h2> 🌟 이미지 반복 </h2>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp함수 호출하여 공백없이 반복</h4>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f6b7efea-41ff-4989-8f09-b8b236568b76">
+
+ ![Image](https://github.com/user-attachments/assets/878c2d82-fcd6-42ce-9701-c412a05dfa8c)
+
 </div>
 
 <br/>
 
-<h2> 🌟 장바구니 </h2>
-<h3> 장바구니 추가 </h3>
-<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp장바구니 추가 시 새로운 로컬 스토리지에 저장</h4>
+<h2> 🌟 스크롤 시 요소 고정 </h2>
+<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp sticky를 활용해 스크롤 시 지정 지점에서 요소 고정</h4>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/3b7b0bd6-16bb-4670-9d5f-ccf4c1c397e0">
-</div>
 
-<br/>
-
-<h3> 장바구니 제품 삭제 </h3>
-<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp제품 삭제 시 로컬 스토리지에서 삭제</h4>
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/638c2d37-97a5-4aa3-aea9-9f8f687834ce">
+ ![Image](https://github.com/user-attachments/assets/98d63e03-2f65-4cee-ab14-d8fac9b4e23c)
+ 
 </div>
 
 <br/>
