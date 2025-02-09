@@ -186,16 +186,6 @@
 
 <br/>
 
-<h2> 🌟 드래그 스크롤 </h2>
-<h4>&nbsp&nbsp&nbsp&nbsp-&nbsp마우스 이벤트를 활용한 드래그 스크롤 기능</h4>
-<div align="center">
- 
- ![Image](https://github.com/user-attachments/assets/4119cd6d-ef1a-4996-a69d-e01be744b4d1)
-
-</div>
-
-<br/>
-
 <h2> 🌟 모달창을 활용한 레시피 확인 </h2>
 <h4>&nbsp&nbsp&nbsp&nbsp-&nbsp부트스트랩을 활용하여 레시피를 구성</h4>
 <div align="center">
